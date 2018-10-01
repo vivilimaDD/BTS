@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog do BTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu{
+        width: 100%;
+        height: 50px;
+        background-color: #222;
+        font-family: 'Arial';
+    }
+    .menu ul{
+        list-style:none;
+        position: relative;
+    }
+
+    .menu ul li{
+        width: 150px;
+        float: left;
+    }
+
+    .menu a{
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: #222;
+        color: #fff; 
+    }
+
+    .menu ul ul{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .menu ul li:hover ul{
+        visibility: visible;
+    }
+
+    .menu a:hover{
+        background-color: #f4f4f4;
+        color: #555;
+    }
+
+    .menu ul ul li{
+        float: none;
+        border-bottom: solid 1px #ccc;
+    }
+
+    .menu ul ul li a{
+        background-color: #f38200;
+    }
+
+    label[for="bt_menu"]{
+        padding: 5px;
+        background-color: #222;
+        color: #fff;
+        font-family: "Arial";
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+    #bt_menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display: none;
+    }
+
+    @media(max-width: 479px){
+        label[for="bt_menu"]{
+        display: block;
+        }
+
+        #bt_menu:checked ~ .menu{
+            margin-left: 0;
+
+        }
+        .menu{
+            margin-top: 5px;
+            margin-left: -100%;
+            transition: all .4s;
+        }
+        .menu ul li{
+            width: 100%;
+            float: none;
+        }
+
+        .menu ul ul{
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all .4s;
+        }
+
+        .menu ul li:hover ul{
+            height: auto;
+            max-height: 200px;
+        }
+    }
+
+    .fotos{
+        background-image:url(bts.png);
+        width: 100%;
+        height: 722px;
+        animation-name: picture;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        box-shadow: rgb(126, 125, 125);
+        box-shadow: 0px 2px 10px;
+
+    }
+    @keyframes picture{
+        from{background-image:url(bts.png)}
+        to{background-image: url(BTSS.png)}
+    }
+
+    .centro{
+        float: right;
+        padding: 30px;
+        border: 20px;
+        text-align: justify;
+    }
+    .centro div{
+        background: linear-gradient(white, white, white, rgb(219, 219, 219));
+        padding: 30px;
+        float: left;
+        
+    }
+
+
+
+
+</style>
+<body>
+
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="#" style="background-color: #f38200; color: white;"><strong>Início</strong></a></li>
+            <li><a href="#"><strong>Grupo</strong></a>
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/BTS">História</a></li>
+                    <li><a href="https://aminoapps.com/c/kpoppt/page/blog/sobre-os-membros-do-bts/p53e_82hQuRG0WaEKD0XjbwzLbvGKjzYkm">Membros</a></li>
+                    <li><a href="https://www.cifraclub.com.br/bangtan-boys/fotos.html">Fotos</a></li>
+                </ul></li>
+            <li><a href="#"><strong>Shows</strong></a>
+                <ul>
+                    <li><a href="https://www.viagogo.com/br/Ingressos-Shows/K-Pop/Bangtan-Boys-Ingressos?AffiliateID=49&adposition=1t1&PCID=PSBRGOOSHOBANGTF5A2ED6067-000000&AdID=297186482381&MetroRegionID=&psc=&psc=&ps=&ps=&ps_p=0&ps_c=1372900947&ps_ag=56341854378&ps_tg=kwd-358120045870&ps_ad=297186482381&ps_adp=1t1&ps_fi=&ps_fi=&ps_li=&ps_li=&ps_lp=1031682&ps_n=g&ps_d=c&gclid=EAIaIQobChMI79_3_o_k3QIVUgiRCh1lCQkxEAAYASAAEgL_C_D_BwE">Agendas</a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=bts">Youtube</a></li>
+                    <li><a href="https://www.ouvirmusica.com.br/bangtan-boys/">Músicas</a></li>
+                </ul></li>
+            <li><a href="#"><strong>Contato</strong></a>
+                <ul>
+                    <li><a href="https://www.facebook.com/bangtan.official/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/bts.bighitofficial/?hl=pt-br">Instragram</a></li>
+                    <li><a href="https://twitter.com/bts_twt?lang=ca">Twitter</a></li>
+                </ul></li>
+        </ul>
+    </nav>
+    <div class="fotos"></div>
+    <main class="centro">
+            <div><img src="icon6.jpg" alt="some text" width=200 height=200>
+                <h5>RAP MONSTER (랩몬스터)</h5>
+                <br/>
+                <p>Nascimento: 12.09.1994<br/>
+
+                        Cidade natal: Ilsan<br/>
+                        
+                        Posição: Líder e Rapper<br/>
+                        
+                        Altura: 181 cm<br/>
+                        
+                        Peso: 64 kg<br/><br/></p>
+            </div>
+            <div><img src="icon4.jpg" alt="some text" width=200 height=200>
+                    <h5>JIN (진)</h5><br/>
+                    <p>Nascimento: 04.12.1992<br/>
+
+                            Cidade natal: Gwacheon<br/>
+                            
+                            Posição: Vocalista e Visual<br/>
+                            
+                            Altura: 179 cm<br/>
+                            
+                            Peso: 60 kg<br/><br/>
+                            </p>
+            </div>
+            <div><img src="icon1.png" alt="some text" width=200 height=200>
+                    <h5>SUGA (슈가)</h5><br/>
+                    <p>Nascimento: 09.03.1993<br/>
+
+                            Cidade natal: Daegu<br/>
+                            
+                            Posição: Rapper<br/>
+                             Altura: 176 cm<br/>
+                            Peso: 57 kg<br/><br/></p>
+            </div>
+            <div><img src="icon2.jpg" alt="some text" width=200 height=200>
+                    <h5>J-HOPE (제이홉)</h5><br/>
+                    <p>Nascimento: 18.02.1994<br/>
+
+                            Cidade natal: Gwangju<br/>
+                            
+                            Posição: Rapper e dançarino<br/>
+                            
+                            Altura: 177 cm<br/>
+                            
+                            Peso: 59 kg<br/><br/>
+                            </p>
+            </div>
+            <div><img src="icon7.jpg" alt="some text" width=200 height=200>
+                    <h5>JIMIN (지민)</h5><br/>
+                    <p>Nascimento: 13.10.1995<br/>
+
+                            Cidade natal: Busan<br/>
+                            
+                            Posição: Vocalista e Dançarino<br/>
+                            
+                            Altura: 175 cm<br/>
+                            
+                            Peso: 60 kg<br/><br/></p>
+            </div>
+            <div><img src="icon5.jpg" alt="some text" width=200 height=200>
+                    <h5>V (뷔)</h5><br/>
+                    <p>Nascimento: 30.12.1995<br/>
+
+                            Cidade natal: Daegu<br/>
+                            
+                            Posição: Vocalista<br/>
+                            
+                            Altura: 178 cm<br/>
+                            
+                            Peso: 58 kg<br/><br/></p>
+            </div>
+            <div><img src="icon3.jpg" alt="some text" width=200 height=200>
+                    <h5>JUNGKOOK (정국)</h5><br/>
+                    <p>Nascimento: 01.09.1997<br/>
+
+                            Cidade natal: Busan<br/>
+                            
+                            Posição: Maknae, Vocalista,<br/>
+                             Rapper e Dançarino<br/>
+                             Altura: 177cm<br/>
+                            
+                            Peso: 61kg<br/></p>
+            </div>
+        </main>
+    
+</body>
+</html>
